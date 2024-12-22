@@ -1,0 +1,183 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+/*главная страница*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #595cf6;
+    color: #c6e3ef;
+    border-bottom: 5px solid #c6e3ef;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 50px #c6e3ef;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #c6e3ef;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #595cf6;
+    border: 5px solid #c6e3ef;
+    padding: 5px 10px;
+    border-radius: 20px;
+    width: 35%;
+    box-shadow: inset 0 0 50px #c6e3ef;
+}
+.search-bar input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    color: #c6e3ef;
+    background: transparent;
+    font-size: 16px;
+}
+.search-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search-button img {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+.login-button {
+    background-color: #595cf6;
+    border: 3px solid #c6e3ef;
+    color: #c6e3ef;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.login-button:hover {
+    color: #595cf6;
+    background: #c6e3ef;
+    border: 3px solid #595cf6;
+    box-shadow: 0 0 50px #c6e3ef;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+.card_buttons {
+    position: relative;
+    display: flex;
+    flex: 1 1 25%;
+    height: 200px;
+}
+.main-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    border: 5px solid #c6e3ef;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #595cf6;
+    color: #c6e3ef;
+    transition: 0.3s;
+}
+.main-button:hover{
+    scale: 1.03;
+}
+h3{
+    border-bottom: 3px solid #c6e3ef;
+}
+p{
+    margin-top: -10px;
+}
+.card-icon {
+    font-size: 400%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card_text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.main-button.blur {
+    filter: blur(5px);
+    pointer-events: none;
+}
+
+.option-buttons {
+    width: 90%;
+    display: flex;
+    border: 3px solid #c6e3ef;
+    background-color: #595cf6;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    margin: 5px;
+    border-radius: 15px;
+    box-shadow: 0 0 100px #c6e3ef;
+}
+
+.option-buttons a {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #595cf6;
+    color: #c6e3ef;
+    font-size: 16px;
+    text-align: center;
+}
+.left{
+    border-radius: 10px 0 0 10px;
+    text-decoration: none;
+}
+.right{
+    border-radius: 0 10px 10px 0;
+    text-decoration: none;
+}
+.option-buttons a:hover {
+    background-color: #c6e3ef;
+    color: #595cf6;
+}
+
+.option-buttons.visible {
+    opacity: 1;
+    visibility: visible;
+}
+.cenz{
+    box-shadow: inset 0 0 50px #c6e3ef;
+    opacity: 0.5;
+}
+.cenz:hover{
+    pointer-events: none;
+}
+
+footer{
+    width: 100%;
+    height: 30vh;
+    background-color: #212121;
+    color: #ffffff;
+    font-size: 1.5em;
+    p{
+        margin: 10px;
+    }
+}

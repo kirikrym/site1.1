@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+    background-color: black;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    padding: 40px;
+    background-color: transparent;
+    border-radius: 20px;
+    box-shadow: 0 0 50px #c6e3ef;
+    overflow: hidden;
+    z-index: 10;
+}
+.from-wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+}
+form, h2, label, .forgot-pass{
+    background-color: #595cf6;
+}
+h2{
+    font-size: 30px;
+    color: #c6e3ef;
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    width: 320px;
+    margin: 30px 0;
+    border-bottom: 2px solid #c6e3ef;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #c6e3ef;
+    pointer-events: none;
+    transition: 0.5s;
+    background-color: transparent;
+}
+.input-box input{
+    width: 100%;
+    height: 40px;
+    background: #595cf6;
+    border: none;
+    outline: none;
+    padding: 0 5px;
+    font-size: 16px;
+    color: #c6e3ef;
+}
+.input-box input:focus ~ label,
+.input-box input:valid ~ label{
+    top: -1px;
+}
+.forgot-pass{
+    margin: -15px 0 15px 15px;
+}
+.forgot-pass a{
+    color: #c6e3ef;
+    background-color: #595cf6;
+    font-size: 14px;
+    text-decoration: none;
+}
+.forgot-pass a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    background: #595cf6;
+    border-radius: 30px;
+    border: 3px solid #c6e3ef;
+    cursor: pointer;
+    font-size: 16px;
+    color: #c6e3ef;
+    font-weight: 500;
+    transition: 0.3s;
+}
+button:hover{
+    color: #595cf6;
+    background: #c6e3ef;
+    border: 3px solid #595cf6;
+    scale: 0.95;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0 0 50px #c6e3ef;
+}
+.sign-link{
+    font-size: 14px;
+    text-align: center;
+    margin: 15px 0;
+}
+.sign-link p{
+    color: #c6e3ef;
+    background-color: #595cf6;
+}
+.sign-link a{
+    text-decoration: none;
+    color: #c6e3ef;
+    font-weight: 600;
+    background-color: #595cf6;
+    padding: 2px;
+    transition: 0.3s;
+}
+.sign-link a:hover{
+    text-decoration: underline;
+    margin: 3px;
+}
+.social-platform{
+    font-size: 14px;
+    color: #c6e3ef;
+    text-align: center;
+}
+.social-platform p{
+    background-color: #595cf6;
+}
+.social-icons{
+    background-color: #595cf6;
+}
+.social-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border: 3px solid #c6e3ef;
+    background-color: #595cf6;
+    border-radius: 50%;
+    text-align: center;
+    margin: 15px 6px 0;
+    transition: 0.5s;
+}
+.social-icons a:hover{
+    border: 3px solid #595cf6;
+    box-shadow: 0 0 50px #c6e3ef;
+    scale: 1.2;
+}
+.social-icons i{
+    font-size: 14px;
+    line-height: 35px;
+    background-color: #595cf6;
+}
+.social-icons img{
+    width: 100%;
+    border-radius: 50%;
+
+}
+.curved{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    background-color: #595cf6;
+    clip-path: circle(110% at 0 0);
+}
